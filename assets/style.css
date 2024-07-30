@@ -1,0 +1,21 @@
+/* assets/styles.css */
+body {
+    background-color: #F5F5F5;
+}
+
+.header {
+    color: #2C3E50;
+}
+
+.subheader {
+    color: #2980B9;
+}
+
+.text-primary {
+    color: #34495E;
+}
+
+.bg-custom {
+    background-color: #ECF0F1;
+}
+
