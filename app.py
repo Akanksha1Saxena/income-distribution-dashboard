@@ -223,11 +223,14 @@ app.layout = html.Div([
     ], className='container'),
 
     # Introduction Section
-    html.Div([
+       html.Div([
         html.Div([
             html.H2("Introduction", className='subheader', style={'color': '#1E4C6A'}),
-            html.P("Welcome to the interactive dashboard for analyzing how income varies based on demographic factors. This dataset was retrieved from the UCI Machine Learning Repository and extracted from the 1994 Census bureau database by Ronny Kohavi and Barry Becker from Silicon Graphics. The goal is to explore and visualize the relationships between various demographic factors and income levels.",
-                   style={'color': 'black', 'font-size': '1.15rem'}),
+            html.Div([
+                "Welcome to the interactive dashboard for analyzing how income varies based on demographic factors. This ",
+                html.A("dataset", href='https://www.kaggle.com/datasets/priyamchoksi/adult-census-income-dataset/data', target='_blank', style={'color': '#008ae6'}),
+                " was retrieved from the UCI Machine Learning Repository and extracted from the 1994 Census bureau database by Ronny Kohavi and Barry Becker from Silicon Graphics. The goal is to explore and visualize the relationships between various demographic factors and income levels."
+            ], style={'color': 'black', 'font-size': '1.15rem'}),
         ], className='p-3 bg-custom rounded shadow-sm mb-4')
     ], className='container'),
 
@@ -303,7 +306,7 @@ app.layout = html.Div([
     html.Div([
         html.Div([
             dcc.Graph(id='graph-output', style={'height': '450px', 'width': '800px'}),
-            html.Div(id='insights-output', style={'width': '30%', 'display': 'inline-block', 'margin-left': '30px', 'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'})
+            html.Div(id='insights-output', style={'width': '30%', 'display': 'inline-block', 'margin-left': '30px', 'font-size': '1.15rem', 'font-weight': 'bold'})
         ], style={'display': 'flex', 'justify-content': 'space-between', 'margin-bottom': '20px'}),
     ], className='container'),
 
@@ -317,8 +320,8 @@ app.layout = html.Div([
             ),
             html.Div([
                 html.Ul([
-                    html.Li("Most people work in the Private sector, with a significant number of males compared to females.", style={'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'}),
-                    html.Li("Other work classes have relatively balanced gender distributions but much lower counts.", style={'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'})
+                    html.Li("Most people work in the Private sector, with a significant number of males compared to females.", style={'color': '#54aeb1', 'font-size': '1.15rem', 'font-weight': 'bold'}),
+                    html.Li("Other work classes have relatively balanced gender distributions but much lower counts.", style={'color': '#54aeb1', 'font-size': '1.15rem', 'font-weight': 'bold'})
                 ], className='flex-item')
             ])
         ], style={'display': 'flex', 'justify-content': 'space-between', 'margin-bottom': '30px'})
@@ -332,9 +335,9 @@ app.layout = html.Div([
             html.Img(src='/assets/age_workclass.png', style={'width': '48%'}),
             html.Div([
                 html.Ul([
-                    html.Li("The Private sector has the widest age distribution, indicating a diverse age group.", style={'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'}),
-                    html.Li("The Never-worked category has a very narrow age range, with most individuals being quite young.", style={'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'}),
-                    html.Li("Other work classes have varying age distributions, highlighting the diversity in age across different types of employment.", style={'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'})
+                    html.Li("The Private sector has the widest age distribution, indicating a diverse age group.", style={'color': '#778899', 'font-size': '1.15rem', 'font-weight': 'bold'}),
+                    html.Li("The Never-worked category has a very narrow age range, with most individuals being quite young.", style={'color': '#778899', 'font-size': '1.15rem', 'font-weight': 'bold'}),
+                    html.Li("Other work classes have varying age distributions, highlighting the diversity in age across different types of employment.", style={'color': '#778899', 'font-size': '1.15rem', 'font-weight': 'bold'})
                 ], className='flex-item')
             ])
         ], style={'display': 'flex', 'justify-content': 'space-between', 'margin-bottom': '20px'})
@@ -349,9 +352,9 @@ app.layout = html.Div([
             dcc.Graph(figure=sunburst()),
             html.Div([
                 html.Ul([
-                    html.Li("Individuals earning >50K tend to be in Adm-clerical, Craft repair and Prof-specialty roles, working longer hours.", style={'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'}),
-                    html.Li("The largest segment of <=50K income earners work in various occupations with smaller average work hours.", style={'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'}),
-                    html.Li("Other work classes have varying age distributions, highlighting the diversity in age across different types of employment.", style={'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'})
+                    html.Li("Individuals earning >50K tend to be in Adm-clerical, Craft repair and Prof-specialty roles, working longer hours.", style={'color': '#cc6666', 'font-size': '1.15rem', 'font-weight': 'bold'}),
+                    html.Li("The largest segment of <=50K income earners work in various occupations with smaller average work hours.", style={'color': '#cc6666', 'font-size': '1.15rem', 'font-weight': 'bold'}),
+                    html.Li("Other work classes have varying age distributions, highlighting the diversity in age across different types of employment.", style={'color': '#cc6666', 'font-size': '1.15rem', 'font-weight': 'bold'})
                 ], className='flex-item')
             ])
         ], style={'display': 'flex', 'justify-content': 'space-between', 'margin-bottom': '30px'})
@@ -364,7 +367,13 @@ app.layout = html.Div([
 
         html.Div([
             dcc.Graph(figure=multivariate1(), style={'overflowX': 'auto'}),
-            html.Div("Additional content or components here", className='flex-item', style={'margin-left': '20px', 'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'})
+            html.Div([
+                html.Ul([
+                    html.Li("The Private work class has a diverse range of occupations, with more individuals in lower income brackets.", style={'color': '#da9100', 'font-size': '1.15rem', 'font-weight': 'bold'}),
+                    html.Li("State-gov and Federal-gov work classes show a limited range of occupations, with a balanced income distribution.", style={'color': '#da9100', 'font-size': '1.15rem', 'font-weight': 'bold'}),
+                    html.Li("Self-employed individuals in the Self-emp-inc category show a notable number of higher-income occupations.", style={'color': '#da9100', 'font-size': '1.15rem', 'font-weight': 'bold'})
+                ], className='flex-item')
+            ])
         ], style={'display': 'flex', 'justify-content': 'space-between', 'margin-bottom': '20px'}),
     ], className='container'),
 
@@ -375,7 +384,12 @@ app.layout = html.Div([
 
         html.Div([
             dcc.Graph(figure=multivariate2(df)),
-            html.Div("Additional content or components here", className='flex-item', style={'margin-left': '20px', 'color': '#37607B', 'font-size': '1.15rem', 'font-weight': 'bold'}),
+            html.Div([
+                html.Ul([
+                    html.Li("Self-emp-inc work class shows significantly higher average capital gains in United States", style={'color': '#534b4f', 'font-size': '1.15rem', 'font-weight': 'bold'}),
+                    html.Li("There is a noticeable capital gain difference among racial groups within the same work class.", style={'color': '#534b4f', 'font-size': '1.15rem', 'font-weight': 'bold'})
+                ], className='flex-item')
+            ])
         ], style={'display': 'flex', 'justify-content': 'space-between', 'margin-bottom': '20px'})
     ], className='container'),
 
@@ -396,7 +410,7 @@ app.layout = html.Div([
         dcc.Graph(id='map-graph')
     ], className='container')
 
-], style={'backgroundColor': '#000000', 'color': '#05395a'})  # Set background color and text color
+])  # Set background color and text color
 
 
 
@@ -413,44 +427,44 @@ def update_main_analysis(selected_option):
     if selected_option == 'hours_worked':
         fig = hours_worked_plot()
         insights = html.Ul([
-    html.Li("The median hours worked per week for both income groups is 40 hours."),
-    html.Li("People earning greater than 50K tend to work slightly more hours per week compared to those earning less than or equal to 50K."),
-    html.Li("There are more outliers in the greater than 50K group, indicating some individuals work significantly more hours (up to 100 hours per week)."),
-    html.Li("The interquartile range (IQR) for the less than or equal to 50K group is narrower compared to the greater than 50K group, suggesting that hours worked per week is more consistent among lower earners.")
+    html.Li("The median hours worked per week for both income groups is 40 hours.",style={'color': '#86608e'}),
+    html.Li("People earning greater than 50K tend to work slightly more hours per week compared to those earning less than or equal to 50K.",style={'color': '#86608e'}),
+    html.Li("There are more outliers in the greater than 50K group, indicating some individuals work significantly more hours (up to 100 hours per week).",style={'color': '#86608e'}),
+    html.Li("The interquartile range (IQR) for the less than or equal to 50K group is narrower compared to the greater than 50K group, suggesting that hours worked per week is more consistent among lower earners.",style={'color': '#86608e'})
 ])
 
     elif selected_option == 'age_distribution':
         fig = age_distribution_plot()
         insights = html.Ul([
-    html.Li("The distribution of age for people earning less than or equal to 50K is wider compared to those earning greater than 50K."),
-    html.Li("There are more younger individuals (20-40 years) in the less than or equal to 50K group."),
-    html.Li("The greater than 50K group has a tighter age distribution, indicating that higher earners are often within a more specific age range.")
+    html.Li("The distribution of age for people earning less than or equal to 50K is wider compared to those earning greater than 50K.",style={'color': '#86608e'}),
+    html.Li("There are more younger individuals (20-40 years) in the less than or equal to 50K group.",style={'color': '#86608e'}),
+    html.Li("The greater than 50K group has a tighter age distribution, indicating that higher earners are often within a more specific age range.",style={'color': '#86608e'})
 ])
 
     elif selected_option == 'marital_status':
         fig = marital_status_plot()
         insights =html.Ul([
-    html.Li("Individuals who have never married or are divorced show a higher count of individuals earning less than or equal to 50K."),
-    html.Li("Married individuals, especially those with spouses, show a higher count of individuals earning greater than 50K."),
-    html.Li("The income disparity based on marital status is evident, with married individuals having a higher likelihood of earning more.")
+    html.Li("Individuals who have never married or are divorced show a higher count of individuals earning less than or equal to 50K.",style={'color': '#5f9ea0'}),
+    html.Li("Married individuals, especially those with spouses, show a higher count of individuals earning greater than 50K.",style={'color': '#5f9ea0'}),
+    html.Li("The income disparity based on marital status is evident, with married individuals having a higher likelihood of earning more.",style={'color': '#5f9ea0'})
 ])
 
 
     elif selected_option == 'racial_group':
         fig = racial_status_stacked_plot()
         insights = html.Ul([
-    html.Li("Most of the individuals in the dataset are White, with a higher count earning less than or equal to 50K."),
-    html.Li("Other races, such as Black and Asian-Pac-Islander, also have significant counts but with fewer individuals earning greater than 50K."),
-    html.Li("The disparity in income distribution is evident across different races, with a noticeable difference in the counts of higher earners.")
+    html.Li("Most of the individuals in the dataset are White, with a higher count earning less than or equal to 50K.",style={'color': '#26619c'}),
+    html.Li("Other races, such as Black and Asian-Pac-Islander, also have significant counts but with fewer individuals earning greater than 50K.",style={'color': '#26619c'}),
+    html.Li("The disparity in income distribution is evident across different races, with a noticeable difference in the counts of higher earners.",style={'color': '#26619c'})
 ])
 
 
     elif selected_option == 'education_level':
         fig = education_level_plot()
         insights = html.Ul([
-    html.Li("Most individuals have education levels around high school graduation (HS-grad) and some college education."),
-    html.Li("Higher education levels like Bachelors, Masters,HS-grad and Doctorate show a higher proportion of individuals earning greater than 50K."),
-    html.Li("Lower education levels (like 1st-4th grade, 5th-6th grade) show a higher proportion of individuals earning less than or equal to 50K.")
+    html.Li("Most individuals have education levels around high school graduation (HS-grad) and some college education.",style={'color': '#739073'}),
+    html.Li("Higher education levels like Bachelors, Masters,HS-grad and Doctorate show a higher proportion of individuals earning greater than 50K.",style={'color': '#739073'}),
+    html.Li("Lower education levels (like 1st-4th grade, 5th-6th grade) show a higher proportion of individuals earning less than or equal to 50K.",style={'color': '#739073'})
 ])
 
     return fig, insights
