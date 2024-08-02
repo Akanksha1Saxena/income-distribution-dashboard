@@ -9,8 +9,7 @@ from styles import css_styles, insight_styles
 
 
 # read data
-file_read = "C:/Users/Akanksha/Downloads/Refined_csv/refined_adult.csv"
-df = pd.read_csv(file_read)
+df = pd.read_csv("refined_adult.csv")
 # Initialize the Dash app
 app = dash.Dash(__name__,suppress_callback_exceptions=True, external_stylesheets=[{'href': 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css',
     'rel': 'stylesheet',
