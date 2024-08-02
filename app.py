@@ -1,4 +1,5 @@
 import dash
+import os
 from dash import dcc, html,Dash
 from dash.dependencies import Input, Output
 import pandas as pd
@@ -493,4 +494,6 @@ def update_map(selected_filter):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    # Use the PORT environment variable if available, otherwise default to 8050
+    port = int(os.environ.get('PORT', 8050))
+    app.run_server(host='0.0.0.0', port=port)
