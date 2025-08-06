@@ -44,24 +44,24 @@ Here's a quick look at the dashboard and visualizations:
 ![Dashboard Overview](images/dashboard.png)
 
 
-![Age_Distribution_analysis](imagesAge_Distribution_analysis.png)
+![Age_Distribution_analysis](images/Age_Distribution_analysis.png)
 
-![Income_Distribution_by_age](imagesIncome_Distribution_by_age.png)
+![Income_Distribution_by_age](images/Income_Distribution_by_age.png)
 
-![Income_Distribution_by_education_level](Income_Distribution_by_education_level.png)
+![Income_Distribution_by_education_level](images/Income_Distribution_by_education_level.png)
 
-![Income_Distribution_by_hours_per_week](Income_Distribution_by_hours_per_week.png)
-
-
-![Income_Distribution_by_martial_status](Income_Distribution_by_martial_status.png)
-
-![Demographic_Distribution_and_Income_Proportions](Demographic_Distribution_and_Income_Proportions.png)
+![Income_Distribution_by_hours_per_week](images/Income_Distribution_by_hours_per_week.png)
 
 
-![Average Capital Gain by Work Class, Race, and Native Country](Average Capital Gain by Work Class, Race, and Native Country.png)
+![Income_Distribution_by_martial_status](images/Income_Distribution_by_martial_status.png)
 
-![Variation_In_Work_Hours_Across_Occupation_and_Work_Classes](Variation_In_Work_Hours_Across_Occupation_and_Work_Classes.png)
+![Demographic_Distribution_and_Income_Proportions](images/Demographic_Distribution_and_Income_Proportions.png)
 
-![Global Analysis of Average Capital Gain_and_Loss](Global Analysis of Average Capital Gain_and_Loss.png)
+
+![Average Capital Gain by Work Class, Race, and Native Country](images/Average Capital Gain by Work Class, Race, and Native Country.png)
+
+![Variation_In_Work_Hours_Across_Occupation_and_Work_Classes](images/Variation_In_Work_Hours_Across_Occupation_and_Work_Classes.png)
+
+![Global Analysis of Average Capital Gain_and_Loss](images/Global Analysis of Average Capital Gain_and_Loss.png)
 
 
