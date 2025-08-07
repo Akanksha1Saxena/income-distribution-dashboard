@@ -56,7 +56,7 @@ An interactive dashboard built using **Python**, **Dash**, and **Plotly** to exp
 
 ### Average Capital Gain by Work Class, Race, and Native Country
 
-![Capital Gain by Work Class](https://raw.githubusercontent.com/Akanksha1Saxena/income-distribution-dashboard/main/assets/images/Average_Capital_Gain_by_Work_Class_Race_and_Native_Country.png)
+![Capital Gain by Work Class](https://github.com/Akanksha1Saxena/income-distribution-dashboard/blob/main/assets/images/Average%20Capital%20Gain%20by%20Work%20Class%2C%20Race%2C%20and%20Native%20Country.png)
 
 ---
 
