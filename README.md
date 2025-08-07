@@ -43,5 +43,6 @@ Here's a quick look at the dashboard and visualizations:
 ### Dashboard Home View
 
 ![Dashboard Overview]
-<img width="1912" height="1081" alt="dashboard" src="https://github.com/user-attachments/assets/4c2f59ab-ea82-4b25-b12c-3b68e6e07ccc" />
+![Dashboard Overview](https://github.com/user-attachments/assets/4c2f59ab-ea82-4b25-b12c-3b68e6e07ccc)
+
 
