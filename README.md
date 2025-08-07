@@ -43,6 +43,7 @@ Here's a quick look at the dashboard and visualizations:
 ### Dashboard Home View
 
 ![Dashboard Overview]
-![Dashboard Overview](https://github.com/user-attachments/assets/4c2f59ab-ea82-4b25-b12c-3b68e6e07ccc)
+![Dashboard Overview](https://raw.githubusercontent.com/Akanksha1Saxena/income-distribution-dashboard/main/assets/images/dashboard.png)
+
 
 
