@@ -42,7 +42,7 @@ Here's a quick look at the dashboard and visualizations:
 
 ### Dashboard Home View
 
-![Dashboard Overview]
-![Dashboard Overview](https://github.com//assets/images/dashboard.png)
+
+![Dashboard Overview](assets/images/dashboard.png)
 
 
