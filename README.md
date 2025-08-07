@@ -41,27 +41,26 @@ python app.py
 Here's a quick look at the dashboard and visualizations:
 
 ### Dashboard Home View
+
 ![Dashboard Overview](images/dashboard.png)
 
+![Age Distribution](images/Age_Distribution_analysis.png)
 
-![Age_Distribution_analysis](images/Age_Distribution_analysis.png)
+![Income by Age](images/Income_Distribution_by_age.png)
 
-![Income_Distribution_by_age](images/Income_Distribution_by_age.png)
+![Income by Education](images/Income_Distribution_by_education_level.png)
 
-![Income_Distribution_by_education_level](images/Income_Distribution_by_education_level.png)
+![Income by Hours](images/Income_Distribution_by_hours_per_week.png)
 
-![Income_Distribution_by_hours_per_week](images/Income_Distribution_by_hours_per_week.png)
+![Income by Marital Status](images/Income_Distribution_by_martial_status.png)
 
+![Demographics and Income](images/Demographic_Distribution_and_Income_Proportions.png)
 
-![Income_Distribution_by_martial_status](images/Income_Distribution_by_martial_status.png)
+![Capital Gain by Work Class](images/Average_Capital_Gain_by_Work_Class_Race_and_Native_Country.png)
 
-![Demographic_Distribution_and_Income_Proportions](images/Demographic_Distribution_and_Income_Proportions.png)
+![Work Hours Variation](images/Variation_In_Work_Hours_Across_Occupation_and_Work_Classes.png)
 
+![Global Capital Gain and Loss](images/Global_Analysis_of_Average_Capital_Gain_and_Loss.png)
 
-![Average Capital Gain by Work Class, Race, and Native Country](images/Average_Capital_Gain_by_Work_Class_Race_and_Native_Country.png)
-
-![Variation_In_Work_Hours_Across_Occupation_and_Work_Classes](images/Variation_In_Work_Hours_Across_Occupation_and_Work_Classes.png)
-
-![Global Analysis of Average Capital Gain_and_Loss](images/Global_Analysis_of_Average_Capital_Gain_and_Loss.png)
 
 
