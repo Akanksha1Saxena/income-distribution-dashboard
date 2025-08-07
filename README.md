@@ -56,8 +56,8 @@ Here's a quick look at the dashboard and visualizations:
 
 ![Demographics and Income](images/Demographic_Distribution_and_Income_Proportions.png)
 
-![Capital Gain by Work Class](images/Average_Capital_Gain_by_Work_Class_Race_and_Native_Country.png)
-
+![[Capital Gain by Work Class](images/Average_Capital_Gain_by_Work_Class_Race_and_Native_Country.png)
+](https://raw.githubusercontent.com/Akanksha1Saxena/income-distribution-dashboard/main/images/Average_Capital_Gain_by_Work_Class_Race_and_Native_Country.png)
 ![Work Hours Variation](images/Variation_In_Work_Hours_Across_Occupation_and_Work_Classes.png)
 
 ![Global Capital Gain and Loss](images/Global_Analysis_of_Average_Capital_Gain_and_Loss.png)
