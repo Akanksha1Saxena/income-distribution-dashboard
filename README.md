@@ -42,26 +42,6 @@ Here's a quick look at the dashboard and visualizations:
 
 ### Dashboard Home View
 
-![Dashboard Overview](images/dashboard.png)
-
-![Age Distributi](<img width="1912" height="1081" alt="Age_Distribution_analysis" src="https://github.com/user-attachments/assets/ef61a3e3-d04e-49b2-905e-9e3924b3670e" />
-on])
-
-![Income by Age](images/Income_Distribution_by_age.png)
-
-![Income by Education](images/Income_Distribution_by_education_level.png)
-
-![Income by Hours](images/Income_Distribution_by_hours_per_week.png)
-
-![Income by Marital Status](images/Income_Distribution_by_martial_status.png)
-
-![Demographics and Income](images/Demographic_Distribution_and_Income_Proportions.png)
-
-![[Capital Gain by Work Class](images/Average_Capital_Gain_by_Work_Class_Race_and_Native_Country.png)
-](https://raw.githubusercontent.com/Akanksha1Saxena/income-distribution-dashboard/main/images/Average_Capital_Gain_by_Work_Class_Race_and_Native_Country.png)
-![Work Hours Variation](images/Variation_In_Work_Hours_Across_Occupation_and_Work_Classes.png)
-
-![Global Capital Gain and Loss](images/Global_Analysis_of_Average_Capital_Gain_and_Loss.png)
-
-
+![Dashboard Overview]
+<img width="1912" height="1081" alt="dashboard" src="https://github.com/user-attachments/assets/4c2f59ab-ea82-4b25-b12c-3b68e6e07ccc" />
 
