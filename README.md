@@ -44,7 +44,8 @@ Here's a quick look at the dashboard and visualizations:
 
 ![Dashboard Overview](images/dashboard.png)
 
-![Age Distribution](images/Age_Distribution_analysis.png)
+![Age Distributi](<img width="1912" height="1081" alt="Age_Distribution_analysis" src="https://github.com/user-attachments/assets/ef61a3e3-d04e-49b2-905e-9e3924b3670e" />
+on])
 
 ![Income by Age](images/Income_Distribution_by_age.png)
 
